@@ -11,7 +11,7 @@ function Projects() {
       <div className="grid md:grid-cols-3 gap-8">
 
         <div className="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
-          <img src={weather} className="w-full h-auto" />
+          <img src={weather} className="w-full max-w-sm mx-auto h-auto" />
           <div className="p-4">
             <h3 className="text-xl font-semibold">Weather App</h3>
             <p className="text-gray-600">Real-time weather using API</p>
@@ -19,7 +19,7 @@ function Projects() {
         </div>
 
         <div className="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
-          <img src={portfolio} className="w-full h-auto" />
+          <img src={portfolio} className="w-full max-w-sm mx-auto h-auto" />
           <div className="p-4">
             <h3 className="text-xl font-semibold">Portfolio</h3>
             <p className="text-gray-600">React + Tailwind</p>
