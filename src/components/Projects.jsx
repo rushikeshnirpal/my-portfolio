@@ -1,3 +1,6 @@
+import weather from "../assets/weather.png";
+import portfolio from "../assets/hero.png";
+
 function Projects() {
   return (
     <div className="mt-32 px-6">
@@ -6,29 +9,21 @@ function Projects() {
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8">
-        
-        {/* Project 1 */}
-        <div className="bg-white shadow-lg rounded-xl p-6">
-          <h3 className="text-xl font-semibold">Weather App</h3>
-          <p className="text-gray-600 mt-2">
-            A weather app that shows real-time temperature and weather data using API.
-          </p>
+
+        <div className="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src={weather} alt="weather" className="w-full h-40 object-cover"/>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">Weather App</h3>
+            <p className="text-gray-600">Real-time weather using API</p>
+          </div>
         </div>
 
-        {/* Project 2 */}
-        <div className="bg-white shadow-lg rounded-xl p-6">
-          <h3 className="text-xl font-semibold">Portfolio Website</h3>
-          <p className="text-gray-600 mt-2">
-            Personal portfolio built using React and Tailwind CSS.
-          </p>
-        </div>
-
-        {/* Project 3 */}
-        <div className="bg-white shadow-lg rounded-xl p-6">
-          <h3 className="text-xl font-semibold">Coming Soon</h3>
-          <p className="text-gray-600 mt-2">
-            More projects will be added soon.
-          </p>
+        <div className="bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 transition">
+          <img src={portfolio} alt="portfolio" className="w-full h-40 object-cover"/>
+          <div className="p-4">
+            <h3 className="text-xl font-semibold">Portfolio</h3>
+            <p className="text-gray-600">React + Tailwind</p>
+          </div>
         </div>
 
       </div>
