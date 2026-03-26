@@ -3,7 +3,7 @@ import portfolio from "../assets/portfolio.png";
 
 function Projects() {
   return (
-    <div className="mt-32 px-6">
+    <div id="projects" className="mt-32 px-6">
       <h2 className="text-3xl font-bold text-center mb-10">
         My Projects
       </h2>

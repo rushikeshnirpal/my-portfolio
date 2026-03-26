@@ -2,7 +2,7 @@ import profile from "../assets/profile.png";
 
 function Hero() {
   return (
-    <div data-aos="zoom-in" className="text-center mt-24 px-4">
+    <div id="home" data-aos="zoom-in" className="text-center mt-24 px-4">
 
       {/* 👇 IMAGE FIRST */}
       <img 

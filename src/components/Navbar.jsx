@@ -4,10 +4,10 @@ function Navbar() {
       <h2 className="text-2xl font-bold">Rushikesh</h2>
 
       <div className="space-x-6 text-lg">
-        <span className="cursor-pointer hover:text-gray-400">Home</span>
-        <span className="cursor-pointer hover:text-gray-400">About</span>
-        <span className="cursor-pointer hover:text-gray-400">Projects</span>
-        <span className="cursor-pointer hover:text-gray-400">Contact</span>
+        <a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
       </div>
     </nav>
   );
