@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import ParticlesBg from "./components/ParticlesBg";
 function App() {
   const [dark, setDark] = useState(false);
 
@@ -34,7 +34,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-
+      <ParticlesBg />
     </div>
   );
 }
