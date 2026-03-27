@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -22,12 +23,17 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      
-      {/* ✅ Navbar always on top */}
-      <Navbar />
+    <div className={dark ? "dark bg-gray-900 text-white min-h-screen" : "bg-gray-100 min-h-screen"}>
 
-      {/* ✅ Sections in order */}
+      {/* 🌙 Toggle Button */}
+      <button 
+        onClick={() => setDark(!dark)}
+        className="fixed top-4 right-4 bg-black text-white px-4 py-2 rounded"
+      >
+        {dark ? "☀️ Light" : "🌙 Dark"}
+      </button>
+
+      <Navbar />
       <Hero />
       <About />
       <Skills />
