@@ -28,7 +28,7 @@ function App() {
       {/* 🌙 Toggle Button */}
       
 
-      <Navbar />
+      <Navbar dark={dark} setDark={setDark} />
       <Hero />
       <About />
       <Skills />

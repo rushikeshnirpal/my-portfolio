@@ -8,6 +8,7 @@ function Navbar({ dark, setDark }) {
 
         <a href="#home" className="hover:text-gray-400">Home</a>
         <a href="#about" className="hover:text-gray-400">About</a>
+        <a href="#skills" className="hover:text-gray-400">Skills</a> {/* 👈 ADD THIS */}
         <a href="#projects" className="hover:text-gray-400">Projects</a>
         <a href="#contact" className="hover:text-gray-400">Contact</a>
 
