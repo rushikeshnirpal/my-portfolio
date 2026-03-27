@@ -26,12 +26,7 @@ function App() {
     <div className={dark ? "dark bg-gray-900 text-white min-h-screen" : "bg-gray-100 min-h-screen"}>
 
       {/* 🌙 Toggle Button */}
-      <button 
-        onClick={() => setDark(!dark)}
-        className="fixed top-4 right-4 bg-black text-white px-4 py-2 rounded"
-      >
-        {dark ? "☀️ Light" : "🌙 Dark"}
-      </button>
+      
 
       <Navbar />
       <Hero />
