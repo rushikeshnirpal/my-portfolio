@@ -8,6 +8,7 @@ function Navbar() {
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
+<a href="#skills" className="hover:text-gray-400">Skills</a>
       </div>
     </nav>
   );
